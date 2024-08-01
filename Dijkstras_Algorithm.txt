@@ -1,0 +1,46 @@
+Dijkstra's Algorithm Documentation
+
+This is the structure of the project analyzed:
+algorithms-sedgewick-wayne/src/chapter4/section4
+├── DijkstraShortestPath.c
+├── DijkstraShortestPath.h
+├── main.c
+└── EdgeWeightedDigraph.c
+
+ 
+
+Overview
+
+This project implements Dijkstra's algorithm in C for finding the shortest paths from a source vertex to all other vertices in a weighted directed graph.
+
+File Structure
+
+- `DijkstraShortestPath.h`: Header file declaring the functions and structures used in the Dijkstra's algorithm implementation.
+- `DijkstraShortestPath.c`: Implements Dijkstra's algorithm.
+- `EdgeWeightedDigraph.h`: Header file for graph representation functions.
+- `EdgeWeightedDigraph.c`: Implements graph representation functions.
+- `main.c`: Tests the Dijkstra's algorithm implementation.
+
+ Function Documentation
+
+ `DijkstraShortestPath.h`
+
+Declares the functions and structures used in the Dijkstra's algorithm implementation.
+
+ `DijkstraShortestPath.c`
+
+- `void dijkstra(DijkstraSP *sp, int source, int vertices, double **graph)`: Implements Dijkstra's algorithm. It initializes distances to infinity and processes vertices to update shortest paths.
+
+ `EdgeWeightedDigraph.h`
+
+Declares the functions for graph representation.
+
+ `EdgeWeightedDigraph.c`
+
+- `double **createGraph(int vertices)`: Creates a graph with a given number of vertices.
+- `void addEdge(double **graph, int v, int w, double weight)`: Adds an edge with a specified weight between two vertices.
+- `void printGraph(double **graph, int vertices)`: Prints the graph.
+
+ `main.c`
+
+Tests the Dijkstra's algorithm implementation by creating a graph, adding edges, running the algorithm, and printing the shortest distances from the source vertex.
