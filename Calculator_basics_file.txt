@@ -1,0 +1,38 @@
+ Simple Calculator 
+
+ Overview
+
+This project implements a basic calculator in C with the following operations:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+ File Structure
+
+- `main.c`: The entry point of the application.
+- `calculator.c`: Implementation of calculator functions.
+- `calculator.h`: Header file declaring the calculator functions.
+
+Function Documentation
+
+`main.c`
+
+This file contains the main function, which is the entry point of the application. It prompts the user to select an operation and input two numbers, then calls the appropriate function from `calculator.c` to perform the calculation.
+
+1) `calculator.h`
+
+This header file declares the calculator functions:
+- `double add(double a, double b);`
+- `double subtract(double a, double b);`
+- `double multiply(double a, double b);`
+- `double divide(double a, double b);`
+
+2) `calculator.c`
+
+This file implements the calculator functions:
+
+- `double add(double a, double b)`: Returns the sum of `a` and `b`.
+- `double subtract(double a, double b)`: Returns the difference between `a` and `b`.
+- `double multiply(double a, double b)`: Returns the product of `a` and `b`.
+- `double divide(double a, double b)`: Returns the quotient of `a` divided by `b`. If `b` is 0, returns 0 (or handle division by zero as needed).
